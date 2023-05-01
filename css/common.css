@@ -28,10 +28,33 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 0 20px;
+    height: 80px;
+    position: relative;
+}
+
+.logo {
+    font-size: 20px;
+    font-weight: 700;
+    position: relative;
+    margin-left: 16px;
+}
+
+.logo::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -12px;
+    width: 34px;
+    height: 34px;
+    background-color: #ccc;
+    border-radius: 100%;
+    z-index: -1;
 }
 
 .header .bars{
     display: none;
+    font-size: 32px;
 }
 
 .gnb{
@@ -47,8 +70,32 @@ body {
     padding: 0 40px;
 }
 
+.gnb li a:hover{
+    color: tomato;
+}
+
+.gnb li a span{
+    display: block;
+    position: relative;
+}
+
+.gnb li a span::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: tomato;
+    width: 0;
+    height: 3px;
+    transition: all 0.3s;
+}
+
+.gnb li a:hover span::after{
+    width: 100%;
+}
+
 .container{
-    width: 1100px;
+    max-width: 1100px;
     margin: 0 auto;
     padding: 0 10px;
 }
@@ -63,6 +110,13 @@ body {
     align-items: center;
     justify-content: space-between;
     padding: 110px 0;
+    max-width: 1100px;
+    margin: 0 auto;
+    margin-bottom: 60px;
+}
+
+.hero img{
+    width: 100%;
 }
 
 .hero .text_box{
@@ -108,4 +162,161 @@ body {
     z-index: -1;
     border-radius: 100%;
     border-top-right-radius: 0;
+}
+
+.skills{
+    display: flex;
+    align-items: center;
+}
+
+.skills .item{
+    flex: 1;
+    padding: 138px 50px;
+    text-align: center;
+}
+
+.skills .item .shape{
+    width: 125px;
+    height: 125px;
+    margin: 0 auto;
+}
+
+.skills .item h3{
+    font-size: 27px;
+    font-weight: 700;
+    margin: 60px 0 40px;
+}
+
+.skills .item p{
+    font-size: 17px;
+}
+
+/* .works */
+.works{
+    padding: 66px 0;
+}
+
+.works h2{
+    font-size: 32px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.works ul{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 45px;
+}
+
+.works ul li {}
+
+.works ul li .photo{
+    height: 330px;
+}
+
+.works ul li .photo img{
+    height: 100%;
+    object-fit: cover;
+}
+
+.works ul li .title{
+    padding: 20px 0 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.works ul li .title h3{
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.works ul li .title p{
+    font-size: 17px;
+}
+
+@media (max-width: 576px) {
+    .gnb{
+        flex-direction: column;
+        position: fixed;
+        top: 0;
+        left: 100%;
+        background-color: #fff;
+        width: 100%;
+        height: 100vh;
+        padding-top: 120px;
+        transition: all 0.25s;
+    }
+
+    .gnb.active{
+        left: 0;
+    }
+    
+    .gnb li a {
+        height: 100px;
+        line-height: 100px;
+        padding: 0 60px;
+        font-size: 24px;
+    }    
+
+    .header .bars{
+        display: block;
+        position: fixed;
+        top: 18px;
+        right: 18px;
+        z-index: 1;
+    }
+        
+    /* .hero */
+    .hero{
+        padding: 0;
+        flex-direction: column-reverse;
+        gap: 44px;
+    }
+
+    .hero .text_box{
+        text-align: center;
+    }
+       
+    .hero .text_box h2{
+        margin: 30px 0;
+        font-size: 48px;
+    }
+
+    .hero .text_box p{
+        font-size: 15px;
+        width: initial;
+        padding: 0 20px;
+    }
+
+    .hero .photo{
+        width: initial;
+        position: initial;
+    }
+
+    .hero .photo img{
+        border-radius: 0;    
+}
+
+    .hero .photo::after {
+        display: none;
+    }
+
+    /* .skills */
+    .skills{
+        flex-wrap: wrap;
+    }
+    
+    .skills .item{
+        padding: 60px 50px;
+    }
+
+    /* .works */
+
+    .works ul{
+        grid-template-columns: repeat(1,1fr);
+        gap: 45px;
+    }
+
 }
