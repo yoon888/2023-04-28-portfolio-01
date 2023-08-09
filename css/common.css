@@ -297,7 +297,7 @@ body {
 
     .hero .photo img{
         border-radius: 0;    
-}
+    }
 
     .hero .photo::after {
         display: none;
