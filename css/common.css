@@ -263,9 +263,40 @@ body {
     gap: 44px;
   }
 
+<<<<<<< HEAD
   .hero .text_box {
     text-align: center;
   }
+=======
+    .hero .photo{
+        width: initial;
+        position: initial;
+    }
+
+    .hero .photo img{
+        border-radius: 0;    
+    }
+
+    .hero .photo::after {
+        display: none;
+    }
+
+    /* .skills */
+    .skills{
+        flex-wrap: wrap;
+    }
+    
+    .skills .item{
+        padding: 60px 50px;
+    }
+
+    /* .works */
+
+    .works ul{
+        grid-template-columns: repeat(1,1fr);
+        gap: 45px;
+    }
+>>>>>>> 1bde082162baa6e5f5a7d70532206628bf5d11ce
 
   .hero .text_box h2 {
     margin: 30px 0;
