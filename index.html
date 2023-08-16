@@ -10,6 +10,12 @@
       href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css"
     />
     <link rel="stylesheet" href="./css/common.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.css"
+    />
+    <script src="./script/jquery-1.12.4.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.js"></script>
   </head>
   <body>
     <div class="wrap">
@@ -17,123 +23,156 @@
         <div class="logo"><a href="#">윤현진</a></div>
         <ul class="gnb">
           <li>
+            <a href=""><span>intro</span></a>
+          </li>
+          <li>
+            <a href=""><span>포트폴리오</span></a>
+          </li>
+          <li>
             <a href=""><span>소개</span></a>
-          </li>
-          <li>
-            <a href=""><span>작업</span></a>
-          </li>
-          <li>
-            <a href=""><span>연락하기</span></a>
           </li>
         </ul>
         <div class="bars"><i class="xi-bars"></i></div>
       </div>
 
-      <div class="hero">
-        <div class="text_box">
-          <h4>Branding | image making</h4>
-          <h2>시들어<br />방황하였으며</h2>
-          <p>
-            노루, 위에 무덤 새겨지는 마디씩 복간도에 아스라히 못 불러듯합니다.
-            쉬이 풀이 밤이 앓은 거외다
-          </p>
-        </div>
-        <div class="photo">
-          <img src="./images/photo.jpg" alt="" />
-        </div>
-      </div>
-      <div class="container">
-        <div class="skills">
-          <div class="item">
-            <div class="shape">
-              <img src="./images/icon_01.svg" alt="" />
-            </div>
-            <h3>Product design</h3>
-            <p>
-              쉬이 풀이 밤이 않은 거외다. 쓸쓸함과 청춘이 오는 가득 거외다. 무덤
-              비둘기, 사랑과 경, 풀이 별
-            </p>
+      <div class="main">
+        <div class="hero">
+          <div class="photo">
+            <img src="./images/내사진.jpg" alt="" />
           </div>
-          <div class="item">
-            <div class="shape">
-              <img src="./images/icon_02.svg" alt="" />
-            </div>
-            <h3>Atr direction</h3>
+          <div class="text_box">
+            <h4>Branding | image making</h4>
+            <h2>시들어<br />방황하였으며</h2>
             <p>
-              쉬이 풀이 밤이 않은 거외다. 쓸쓸함과 청춘이 오는 가득 거외다. 무덤
-              비둘기, 사랑과 경, 풀이 별
-            </p>
-          </div>
-          <div class="item">
-            <div class="shape">
-              <img src="./images/icon_03.svg" alt="" />
-            </div>
-            <h3>Visual design</h3>
-            <p>
-              쉬이 풀이 밤이 않은 거외다. 쓸쓸함과 청춘이 오는 가득 거외다. 무덤
-              비둘기, 사랑과 경, 풀이 별
+              노루, 위에 무덤 새겨지는 마디씩 복간도에 아스라히 못 불러듯합니다.
+              쉬이 풀이 밤이 앓은 거외다
             </p>
           </div>
         </div>
+        <div class="container">
+          <h2>Potrfolio</h2>
+          <div class="works">
+            <div class="btns">
+              <button data-item="all">ALL</button>
+              <button data-item="web">웹디자인</button>
+              <button data-item="banner">배너디자인</button>
+              <button data-item="ui/ux">UI/UX 디자인</button>
+            </div>
 
-        <div class="works">
-          <h2>포트폴리오</h2>
-          <ul>
-            <li>
-              <div class="photo">
-                <img src="./images/photo_01.jpg" alt="" />
-              </div>
-              <div class="title">
-                <h3>WebSite</h3>
-                <p>html, css, javascript</p>
-              </div>
-            </li>
-            <li>
-              <div class="photo">
-                <img src="./images/photo_02.jpg" alt="" />
-              </div>
-              <div class="title">
-                <h3>WebSite</h3>
-                <p>html, css, javascript</p>
-              </div>
-            </li>
-            <li>
-              <div class="photo">
-                <img src="./images/photo_03.jpg" alt="" />
-              </div>
-              <div class="title">
-                <h3>WebSite</h3>
-                <p>html, css, javascript</p>
-              </div>
-            </li>
-            <li>
-              <div class="photo">
-                <img src="./images/photo_04.jpg" alt="" />
-              </div>
-              <div class="title">
-                <h3>Design world</h3>
-                <p>html, css, javascript</p>
-              </div>
-            </li>
-            <li>
-              <div class="photo">
-                <img src="./images/photo_05.jpg" alt="" />
-              </div>
-              <div class="title">
-                <h3>Design world</h3>
-                <p>html, css, javascript</p>
-              </div>
-            </li>
-            <li>
-              <div class="photo">
-                <img src="./images/photo_06.jpg" alt="" />
-              </div>
-              <div class="title">
-                <h3>Design world</h3>
-                <p>html, css, javascript</p>
-              </div>
-            </li>
-          </ul>
+            <ul class="list">
+              <li data-item="web">
+                <div class="photo">
+                  <img src="./images/현대카드메인.png" alt="" />
+                </div>
+                <div class="titles">
+                  <div class="sub_title">
+                    <h3>WebDesign</h3>
+                    <p>html, css, javascript, jquery</p>
+                  </div>
+                  <div class="icon">
+                    <div class="pc"></div>
+                    <div class="mb"></div>
+                  </div>
+                </div>
+              </li>
+              <li data-item="web">
+                <div class="photo">
+                  <img src="./images/한섬닷컴메인.png" alt="" />
+                </div>
+                <div class="titles">
+                  <div class="sub_title">
+                    <h3>WebDesign</h3>
+                    <p>html, css, javascript, jquery</p>
+                  </div>
+                  <div class="icon">
+                    <div class="pc"></div>
+                    <div class="mb"></div>
+                  </div>
+                </div>
+              </li>
+              <li data-item="web">
+                <div class="photo">
+                  <img src="./images/부산은행메인.png" alt="" />
+                </div>
+                <div class="titles">
+                  <div class="sub_title">
+                    <h3>WebDesign</h3>
+                    <p>html, css, javascript, jquery</p>
+                  </div>
+                  <div class="icon">
+                    <div class="pc"></div>
+                    <div class="mb"></div>
+                  </div>
+                </div>
+              </li>
+              <li data-item="banner" class="banner">
+                <div class="photo">
+                  <a href="./images/배너디자인1(한율).jpg">
+                    <img src="./images/배너디자인1(한율).jpg" alt="hanyul" />
+                  </a>
+                </div>
+                <div class="title">
+                  <h3>Banner Design</h3>
+                  <p>한율화장품</p>
+                </div>
+              </li>
+              <li data-item="banner" class="banner">
+                <div class="photo">
+                  <a href="./images/배너디자인02(곰돌이)최종.jpg">
+                    <img
+                      src="./images/배너디자인02(곰돌이)최종.jpg"
+                      alt="bear"
+                    />
+                  </a>
+                </div>
+                <div class="title">
+                  <h3>Banner Design</h3>
+                  <p>곰인형 이벤트 디자인</p>
+                </div>
+              </li>
+              <li data-item="banner" class="banner">
+                <div class="photo">
+                  <a href="./images/쇼핑몰배너디자인(니트) (1).jpg">
+                    <img
+                      src="./images/쇼핑몰배너디자인(니트) (1).jpg"
+                      alt="knit"
+                    />
+                  </a>
+                </div>
+                <div class="title">
+                  <h3>Banner Design</h3>
+                  <p>W컨셉 쇼핑몰 배너 디자인</p>
+                </div>
+              </li>
+              <li data-item="banner" class="banner">
+                <div class="photo">
+                  <img src="./images/photo_06.jpg" alt="w컨셉" />
+                </div>
+                <div class="title">
+                  <h3>Design world</h3>
+                  <p>html, css, javascript</p>
+                </div>
+              </li>
+              <li data-item="banner" class="banner">
+                <div class="photo">
+                  <img src="./images/photo_06.jpg" alt="" />
+                </div>
+                <div class="title">
+                  <h3>Design world</h3>
+                  <p>html, css, javascript</p>
+                </div>
+              </li>
+              <li data-item="banner" class="banner">
+                <div class="photo">
+                  <img src="./images/photo_06.jpg" alt="" />
+                </div>
+                <div class="title">
+                  <h3>Design world</h3>
+                  <p>html, css, javascript</p>
+                </div>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
@@ -148,6 +187,43 @@
       btn.addEventListener("click", function () {
         gnb.classList.toggle("active");
         this.classList.toggle("xi-close");
+      });
+
+      //button
+      $(".btns button").on("click", function (e) {
+        $(".btns button").removeClass("active");
+        $(this).addClass("active");
+
+        var category = e.currentTarget.dataset.item;
+
+        if (category === "all") {
+          $(".list li").show();
+        } else {
+          // $('.list li').hide().filter('[data-item =' + category + ']').show()
+          $(".list li").hide().filter(`[data-item = ${category}]`).show();
+        }
+
+        // gallery lightbox
+        $(".banner").magnificPopup({
+          delegate: "a",
+          type: "image",
+          tLoading: "Loading image #%curr%...",
+          mainClass: "mfp-img-mobile",
+          gallery: {
+            enabled: true,
+            navigateByImgClick: true,
+            preload: [0, 1], // Will preload 0 - before current, and 1 after the current image
+          },
+          image: {
+            tError:
+              '<a href="%url%">The image #%curr%</a> could not be loaded.',
+            titleSrc: function (item) {
+              return (
+                item.el.attr("title") + "<small>by Marsel Van Oosten</small>"
+              );
+            },
+          },
+        });
       });
     </script>
   </body>
