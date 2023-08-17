@@ -20,8 +20,13 @@
   justify-content: center;
 }
 
+.title p:hover {
+  text-decoration: underline;
+}
+
 .title p::after {
   content: "";
+
   background-image: url("../images/right\ arrow.png");
   background-position: center;
   background-repeat: no-repeat;
@@ -33,7 +38,7 @@
 
 .webContents {
   margin-top: 30px;
-  border: 1px solid rgba(0, 0, 0, 0.09);
+  /* border: 1px solid rgba(0, 0, 0, 0.09); */
 }
 
 .webContents .slider {
@@ -41,6 +46,7 @@
   width: 100%;
   display: flex;
   position: relative;
+  box-shadow: 2px 2px 20px 2px rgba(51, 51, 51, 0.2);
 }
 
 .webContents .slider > div {
@@ -96,6 +102,7 @@
   transform: translate(-50%, -50%);
   width: 20px;
   height: 20px;
+  opacity: 0.6;
   background-image: url("../images/left\ arrow.png");
   background-position: center;
   background-repeat: no-repeat;
@@ -123,6 +130,7 @@
   transform: translate(-50%, -50%);
   width: 20px;
   height: 20px;
+  opacity: 0.6;
   background-image: url("../images/right\ arrow.png");
   background-position: center;
   background-repeat: no-repeat;
@@ -173,9 +181,18 @@
   color: #666;
 }
 
+.sliderBtns .git:hover,
+.sliderBtns .fig:hover {
+  opacity: 0.8;
+}
+
 .sliderBtns .fig {
   background-color: #666;
   color: #ddd;
+}
+
+.infoContents {
+  margin-bottom: 200px;
 }
 
 .infoContents table tbody tr {
@@ -186,6 +203,24 @@
   text-align: left;
   width: 200px;
   font-weight: 500;
+}
+
+.infoTop tr:nth-child(3) > td {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+}
+
+.infoTop .figma {
+  background-image: url("../images/social/Figma.png");
+  margin-right: 6px;
+}
+
+.infoTop .vscode {
+  background-image: url("../images/social/vscode-original-wordmark.png");
 }
 
 .infoBottom {
@@ -200,8 +235,8 @@
 
 .infoBottom .infoBox {
   width: 100%;
-  height: 600px;
   background-color: #eee;
   margin-left: auto;
   margin-right: auto;
+  padding: 40px;
 }
