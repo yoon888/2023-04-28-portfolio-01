@@ -1,0 +1,26 @@
+<div class="logo"><a href="../pages/main.html">윤현진</a></div>
+<ul class="gnb">
+  <li>
+    <a href=""><span>intro</span></a>
+  </li>
+  <li>
+    <a href=""><span>포트폴리오</span></a>
+  </li>
+  <li>
+    <a href=""><span>소개</span></a>
+  </li>
+</ul>
+<div class="bars"><i class="xi-bars"></i></div>
+
+<script>
+  const btn = document.querySelector(".bars i");
+  const gnb = document.querySelector(".gnb");
+
+  console.log(btn);
+  console.log(gnb);
+
+  btn.addEventListener("click", function () {
+    gnb.classList.toggle("active");
+    this.classList.toggle("xi-close");
+  });
+</script>

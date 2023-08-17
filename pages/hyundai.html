@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hyundai Card</title>
+    <link rel="stylesheet" href="../css/hyundai.css" />
+    <link rel="stylesheet" href="../css/common.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <script src="../script/jquery-1.12.4.js"></script>
+    <script src="../js/common.js"></script>
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+  </head>
+  <body>
+    <div class="header"></div>
+    <div class="wrap">
+      <div class="title">
+        <h2>웹사이트 클론 코딩</h2>
+        <a href="http://hyundaicard.dothome.co.kr/pages/main.html"
+          ><p>HYUNDAI CARD</p></a
+        >
+
+        <div class="webContents">
+          <div class="slider">
+            <div class="page1"></div>
+            <div class="page2"></div>
+            <div class="page3"></div>
+          </div>
+        </div>
+        <div class="sliderBtns">
+          <a href="https://github.com/yoon888/hyundaicard.git" target="_blank">
+            <button class="git">Github</button>
+          </a>
+          <a
+            href="https://www.figma.com/file/j6NfULJHGa9vYE1YmAhkq1/%ED%98%84%EB%8C%80%EC%B9%B4%EB%93%9C?type=design&node-id=0%3A1&mode=design&t=6wh2SMtIguFRWsoA-1"
+            target="_blank"
+          >
+            <button class="fig">Figma</button>
+          </a>
+        </div>
+      </div>
+      <div class="infoContents">
+        <div class="infoTop">
+          <table>
+            <tbody>
+              <tr>
+                <th>작업시간</th>
+                <td>2023.07.01~2023.08.17</td>
+              </tr>
+              <tr>
+                <th>기여도</th>
+                <td>개인 100%</td>
+              </tr>
+              <tr>
+                <th>프로그램</th>
+                <td>FIGMA, VS CODE</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="infoBottom">
+          <h3>KEYWORD</h3>
+          <div class="infoBox">
+            <p></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      $(".slider").slick({
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: true,
+        dots: true,
+      });
+    </script>
+  </body>
+</html>

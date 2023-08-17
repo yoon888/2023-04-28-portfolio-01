@@ -1,0 +1,207 @@
+.wrap {
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.title {
+  margin: 60px 0;
+  text-align: center;
+}
+
+.title h2 {
+  font-weight: 700;
+  margin-bottom: 70px;
+}
+
+.title p {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.title p::after {
+  content: "";
+  background-image: url("../images/right\ arrow.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 24px;
+  height: 24px;
+  display: inline-block;
+}
+
+.webContents {
+  margin-top: 30px;
+  border: 1px solid rgba(0, 0, 0, 0.09);
+}
+
+.webContents .slider {
+  height: 500px;
+  width: 100%;
+  display: flex;
+  position: relative;
+}
+
+.webContents .slider > div {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+}
+
+.webContents .slider .page1 {
+  height: 500px;
+  background-image: url("../images/handsome-main.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 80%;
+}
+
+.webContents .slider .page2 {
+  background-image: url("../images/handsome-women.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 500px;
+}
+
+.webContents .slider .page3 {
+  height: 500px;
+  background-image: url("../images/handsome-detail.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.slick-prev {
+  position: absolute;
+  top: 50%;
+  left: -50px;
+  transform: translateY(-50%);
+  font-size: 0;
+  background-color: #eee;
+  width: 24px;
+  height: 24px;
+  border-radius: 24px;
+  cursor: pointer;
+}
+
+.slick-prev::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 20px;
+  height: 20px;
+  background-image: url("../images/left\ arrow.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.slick-next {
+  position: absolute;
+  top: 50%;
+  right: -50px;
+  transform: translateY(-50%);
+  font-size: 0;
+  background-color: #eee;
+  width: 24px;
+  height: 24px;
+  border-radius: 24px;
+  cursor: pointer;
+}
+
+.slick-next::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 20px;
+  height: 20px;
+  background-image: url("../images/right\ arrow.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.slick-dots {
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex !important;
+}
+
+.slick-dots li {
+  margin-right: 14px;
+}
+
+.slick-dots li.slick-active button {
+  background-color: #666;
+}
+
+.slick-dots li button {
+  width: 10px;
+  height: 10px;
+  background-color: #ddd;
+  border-radius: 10px;
+  font-size: 0;
+}
+
+.sliderBtns {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.sliderBtns button {
+  margin-top: 44px;
+  width: 90px;
+  height: 40px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.sliderBtns .git {
+  background-color: #ddd;
+  color: #666;
+}
+
+.sliderBtns .fig {
+  background-color: #666;
+  color: #ddd;
+}
+
+.infoContents table tbody tr {
+  line-height: 26px;
+}
+
+.infoTop table tbody tr th {
+  text-align: left;
+  width: 200px;
+  font-weight: 500;
+}
+
+.infoBottom {
+  margin-top: 50px;
+}
+
+.infoBottom h3 {
+  font-weight: 500;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.infoBottom .infoBox {
+  width: 100%;
+  height: 600px;
+  background-color: #eee;
+  margin-left: auto;
+  margin-right: auto;
+}
